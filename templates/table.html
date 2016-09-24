@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> {{ foo }} </title>
+</head>
+
+<body>
+    <h1> Dream Job </h1>
+    <h1> Your future job: {{yourJob}}</h1>
+    <table border = 1 px>
+        <tr>
+            <th>Occupation</th>
+            <th>Percentage</th>
+        </tr>
+
+        {% for item in collection %}
+        <tr>
+            <td>{{ item }}</td>
+            <td>{{ collection[item] }}%</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td>Total</td>
+            <td>99.8%</td>
+        </tr>
+    </table>
+</body>
+
+</html>
